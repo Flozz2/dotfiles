@@ -1,0 +1,9 @@
+configuration {
+    font: "UbuntuMono Nerd Font";
+    show-icons: true;
+    modi: "drun,run";
+    drun-display-format: "{name}";
+    run-command: "{cmd}";
+}
+
+@theme "~/.local/share/rofi/themes/spotlight-dark.rasi"
