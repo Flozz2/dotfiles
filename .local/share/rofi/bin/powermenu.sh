@@ -5,6 +5,6 @@ chosen=$(printf "Shutdown\nReboot\nLock" | rofi -dmenu)
 case "$chosen" in
     "Shutdown") poweroff ;;
     "Reboot") reboot ;;
-    "Lock") slock ;;
+    "Lock") dm-tool lock ;;
     *) exit 1 ;;
 esac
