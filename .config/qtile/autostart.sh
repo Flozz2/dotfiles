@@ -1,3 +1,3 @@
 #! /bin/sh
 picom --config ~/.config/picom/picom.conf &
-./andomwallpaper.sh ~/Pictures/wallpapers
+./randomwallpaper.sh ~/Pictures/wallpapers
