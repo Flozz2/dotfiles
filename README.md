@@ -21,7 +21,7 @@ Before using these dotfiles, ensure you have the following installed:
 Clone the repository into your home directory and apply the configurations using GNU Stow:
 
 ```sh
-git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
+git clone https://github.com/Flozz2/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 stow .
 ```
