@@ -1,6 +1,6 @@
 #! /bin/sh
 
-wallpaperdir="$HOME/Pictures/wallpapers"
+wallpaperdir="$HOME/.local/share/wallpapers/"
 
 # Present the list of wallpapers using rofi and capture the chosen filename.
 chosen=$(ls "$wallpaperdir" | rofi -dmenu)
