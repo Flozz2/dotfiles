@@ -53,7 +53,7 @@ keys = [
     Key([mod], "r", lazy.spawn("rofi -show drun"), desc="Launch rofi"),
 
     Key([mod, "mod1"], "w", lazy.spawn(os.path.expanduser("~/.local/share/rofi/bin/wallpaperpicker.sh"))),
-    Key([mod, "mod1"], "x", lazy.spawn(os.path.expanduser(f"~/.config/qtile/randomwallpaper.sh {os.path.expanduser("~/Pictures/wallpapers")}"))),
+    Key([mod, "mod1"], "x", lazy.spawn(os.path.expanduser(f"~/.config/qtile/randomwallpaper.sh {os.path.expanduser("~/.local/share/wallpapers/")}"))),
 ]
 
 
