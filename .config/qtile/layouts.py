@@ -4,10 +4,10 @@ from variables import colors
 
 # Define a layout theme dictionary
 layout_theme = {
-    "margin": 10,
+    "margin": 8,
     "border_width": 2,
-    "border_focus": colors["active_border"],
-    "border_normal": colors["inactive_border"],
+    "border_focus": colors["primary"],
+    "border_normal": colors["bg"],
 }
 
 layouts = [

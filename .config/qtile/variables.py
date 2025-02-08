@@ -2,11 +2,12 @@
 mod = "mod4"  # Use "mod1" if you prefer Alt
 terminal = "kitty"
 browser = "firefox"
+bar_height = 30
+default_font = "Ubuntu Mono Nerd Font"
 
-# Example color palette
 colors = {
-    "background": "#282c34",
-    "foreground": "#ffffff",
-    "active_border": "#51afef",
-    "inactive_border": "#3f444a",
+    "bg": "#282c34",
+    "fg": "#abb2bf",
+    "primary": "#61afef",
+    "secondary": "#c678dd",
 }
