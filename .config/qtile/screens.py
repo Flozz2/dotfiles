@@ -8,5 +8,5 @@ from variables import bar_height
 screens = [
     Screen(
         wallpaper_mode="fill",
-        top=bar.Bar(init_widgets_list(), bar_height, opacity=1)),
+        top=bar.Bar(init_widgets_list(), bar_height, opacity=1.0, background="#00000000")),
 ]

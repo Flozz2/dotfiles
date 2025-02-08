@@ -41,11 +41,11 @@ def init_widgets_list():
             background=colors["primary"],
             **widget_defaults,
         ),
-        powerline(colors["primary"], colors["bg"], side="left"),
+        powerline(colors["primary"], "#00000000", side="left"),
         widget.Spacer(
-            background=colors["bg"],
+            background="#00000000",
             **widget_defaults),
-        powerline(colors["primary"], colors["bg"]),
+        powerline(colors["primary"], "#00000000"),
         widget.Systray(
             background=colors["primary"],
             **widget_defaults
