@@ -39,7 +39,10 @@ fi
 random_image=${images[$RANDOM % ${#images[@]}]}
 
 # Set wallpaper using feh
-feh --bg-fill "$random_image"
+wal -i "$random_image"
+walcord
+pywal-spicetify text
+pywalfox update
 
-# Print selected image path
-echo "Set wallpaper to: $random_image"
+# Reload Qtile to apply new colors
+qtile cmd-obj -o cmd -f restart

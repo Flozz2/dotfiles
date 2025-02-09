@@ -10,6 +10,12 @@ Before using these dotfiles, ensure you have the following installed:
 - **Picom** – A lightweight compositor for Xorg
 - **Qtile** – A tiling window manager
 - **Kitty** – A fast, feature-rich terminal emulator
+- **pywal** - To get wallpaper dominant colors
+- **spicetify**
+- **walcord**
+- **firefox**
+- **pywalfox**
+
 
 ### 🎨 Font Requirement
 - **Ubuntu Mono Nerd Font** – Required for proper icon rendering. You can install it from [Nerd Fonts](https://www.nerdfonts.com/) or via package manager:

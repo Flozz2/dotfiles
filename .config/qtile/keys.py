@@ -1,7 +1,7 @@
 # keys.py
 from libqtile.config import Key
 from libqtile.lazy import lazy
-from variables import mod, terminal, browser
+from variables import mod, alt, terminal, browser
 
 import os
 
@@ -44,8 +44,8 @@ keys = [
     Key([mod], "b", lazy.spawn(browser)),
     Key([mod], "t", lazy.spawn(terminal)),
 
-    Key([mod, "mod1"], "w", lazy.spawn(os.path.expanduser("~/.local/share/rofi/bin/wallpaperpicker.sh"))),
-    Key([mod, "mod1"], "x", lazy.spawn(os.path.expanduser(f"~/.config/qtile/randomwallpaper.sh {os.path.expanduser("~/.local/share/wallpapers/")}"))),
+    Key([mod, alt], "w", lazy.spawn(os.path.expanduser("~/.local/share/rofi/bin/wallpaperpicker.sh"))),
+    Key([mod, alt], "x", lazy.spawn(os.path.expanduser(f"~/.config/qtile/randomwallpaper.sh {os.path.expanduser("~/.local/share/wallpapers/")}"))),
 
 
 ]

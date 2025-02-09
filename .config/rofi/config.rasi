@@ -4,6 +4,8 @@ configuration {
     modi: "drun,run";
     drun-display-format: "{name}";
     run-command: "{cmd}";
+
 }
 
 @theme "~/.local/share/rofi/themes/spotlight-dark.rasi"
+@import "~/.cache/wal/colors-rofi-dark"

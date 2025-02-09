@@ -102,3 +102,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+# Load Pywal colors for new terminals
+(cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh 2>/dev/null
+
+
+export PATH=$PATH:/home/florian/.spicetify
+
+export QT_QPA_PLATFORMTHEME=qt5ct

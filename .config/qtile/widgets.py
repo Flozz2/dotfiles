@@ -103,11 +103,20 @@ def init_widgets_list():
             highlight_method='text',
             **widget_defaults,
         ),
+        widget.Wttr(
+            format="%t(%f) %C",
+            **widget_defaults,
+        ),
+        widget.Spacer(**widget_defaults),
+        widget.Memory(
+            format="{MemUsed:.1f}{mm}/{MemTotal:.1f}{mm}",
+            measure_mem='G',
+            **widget_defaults,
+        ),
         widget.CPU(
             format='CPU {load_percent}%',
             **widget_defaults
         ),
-        widget.Spacer(**widget_defaults),
         widget.CryptoTicker(
             format=" \uf10f: {amount:,.2f}",
             currency="EUR",
