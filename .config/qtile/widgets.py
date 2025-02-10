@@ -104,10 +104,21 @@ def init_widgets_list():
             **widget_defaults,
         ),
         widget.Wttr(
+            update_interval=300,
             format="%t(%f) %C",
+            #format="%t(%f)",
+            **widget_defaults,
+        ),
+        widget.CurrentLayout(
             **widget_defaults,
         ),
         widget.Spacer(**widget_defaults),
+        widget.GenPollCommand(
+            shell=True,
+            cmd="ip -4 addr show wlp6s0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'",
+            update_interval=1,
+            **widget_defaults,
+        ),
         widget.Memory(
             format="{MemUsed:.1f}{mm}/{MemTotal:.1f}{mm}",
             measure_mem='G',
@@ -124,12 +135,14 @@ def init_widgets_list():
         ),
         widget.CheckUpdates(
             distro="Arch_yay",
-            no_update_string="Up To Date",
-            display_format=" {updates}",
+            custom_command="yay --refresh -Qu",
+            no_update_string="󰚰  0",
+            display_format="󰚰  {updates}",
             **widget_defaults
         ),
         widget.Clock(
-            format="\uf017  %A %d %B %H:%M",
+            # format="\uf017  %A %d %B %H:%M",
+            format="\uf017  %d/%m/%y %H:%M",
             **widget_defaults
         ),
         widget.TextBox(

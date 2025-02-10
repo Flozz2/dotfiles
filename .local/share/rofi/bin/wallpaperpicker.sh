@@ -12,4 +12,6 @@ if [ -n "$chosen" ]; then
     walcord
     pywal-spicetify text
     pywalfox update
+
+    qtile cmd-obj -o cmd -f restart
 fi

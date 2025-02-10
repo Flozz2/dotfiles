@@ -14,6 +14,7 @@ layouts = [
     layout.Columns(**layout_theme),
     layout.MonadTall(**layout_theme),
     layout.Max(**layout_theme),
+    layout.Plasma(**layout_theme),
     # You can add more layouts if desired:
 
 ]
